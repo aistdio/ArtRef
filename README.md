@@ -20,4 +20,4 @@ It works poorly with image rotation function (which was implemented in case the 
 
 Those problems are surely fixable, but I don't have the time nor motivation to upgrade it right now.
 If there will be enough attention to the app, I will fix main problems which were described.
-You can also DM me at [discord.gg/users/nyandato](https://discord.com/users/nyandato)https://discord.com/users/nyandato
+You can also DM me at [discord.com/users/nyandato](https://discord.com/users/nyandato)
