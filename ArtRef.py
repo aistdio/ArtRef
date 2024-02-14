@@ -1,8 +1,9 @@
 # Basics
-from webbrowser import open
+import webbrowser
+import csv
 import ctypes
 from sys import exit
-from os import listdir
+from os import listdir, remove
 from os.path import isfile, join
 import threading
 import random
@@ -97,9 +98,19 @@ def destroy():
 
 
 def get_image():
+    # tmp = []
+    # with open("images.csv") as f:
+    #     reader = csv.DictReader(f)
+    #     for item in reader:
+    #         tmp.append(item["Path"])
+    if not get_names.path:
+        get_names(get_folder.path)
     imagep = random.choice(get_names.path)
     global im
     im = Image.open(imagep).rotate(angle=int(Angle))
+    print(get_names.path)
+    get_names.path.remove(imagep)
+    print(get_names.path)
 
 
 def new_gui(timer):
@@ -210,19 +221,34 @@ def gui():
 
 
 def get_names(dpath):
-    # Dict [{name:path}]
     supported = ['.png', '.jpg', '.jpeg', '.bmp']
+    fields = ["Name", "Path"]
     get_names.names = []
     get_names.path = []
     for i in listdir(dpath):
         if any(k in i.lower() for k in supported):
             if isfile(join(dpath, i)):
-                  # get_names.names.append({i:(dpath + "/" + i)})
+                  # get_names.names.append({fields[0]:i, fields[1]:(dpath + "/" + i)})
                   get_names.path.append(dpath + "/" + i)
+
+    # if isfile("images.csv"):
+    #     remove("images.csv")
+    # fc = open("images.csv", "x")
+    # fc.close()
+    # with open("images.csv", "w") as f:
+    #     writer = csv.DictWriter(f, fieldnames=fields)
+    #     writer.writeheader()
+    #     for item in get_names.names:
+    #         writer.writerow(item)
+    # 
+    # if isfile("images1.csv"):
+    #     remove("images1.csv")
+    # fc = open("images1.csv", "x")
+    # fc.close()
 
 
 def github_press():
-    open("https://github.com/aistdio/ArtRef")
+    webbrowser.open("https://github.com/aistdio/ArtRef")
 
 
 main()
