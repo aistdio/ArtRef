@@ -20,5 +20,5 @@ It doesn't work with multiple folder or Google Disk
 It works poorly with image rotation function (which was implemented in case the app shows images with wrong angle)
 
 Those problems are surely fixable, but I don't have the time nor motivation to upgrade it right now.
-If there will be enough attention to the app, I will fix main problems which were described.
-You can also DM me at [discord.com/users/nyandato](https://discord.com/users/nyandato)
+If there will be enough attention to the app, I will fix main problems which were described and also add other features.
+You can also DM me at discord @nyandato
