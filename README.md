@@ -7,6 +7,7 @@ Hey! This app parses your folder with references and periodically displays it on
 Intended for periodical drawing sessions.
 
 Steps to use:
+
 0. Install python
 1. Run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
 2. Choose folder
