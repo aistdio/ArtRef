@@ -222,7 +222,7 @@ def get_names(dpath):
 
 
 def github_press():
-    open("https://github.com/aistdio")
+    open("https://github.com/aistdio/ArtRef")
 
 
 main()
