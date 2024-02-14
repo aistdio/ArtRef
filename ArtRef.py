@@ -42,7 +42,6 @@ def main():
     # Show it to user and remove number from toshow.txt, save them to hidden.txt
     # Display it to user
 
-    print("0")
     exit
 
 
@@ -108,9 +107,7 @@ def get_image():
     imagep = random.choice(get_names.path)
     global im
     im = Image.open(imagep).rotate(angle=int(Angle))
-    print(get_names.path)
     get_names.path.remove(imagep)
-    print(get_names.path)
 
 
 def new_gui(timer):
