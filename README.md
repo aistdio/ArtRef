@@ -7,12 +7,11 @@ Hey! This app parses your folder with references and periodically displays it on
 Intended for periodical drawing sessions.
 
 Steps to use:
-
-0. Run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
-
-1. Choose folder
-2. Enter any number for timer (in seconds, for example "30" means that each 30 seconds reference will be changed)
-3. Draw!
+0. Install python
+1. Run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
+2. Choose folder
+3. Enter any number for timer (in seconds, for example "30" means that each 30 seconds reference will be changed)
+4. Draw!
 
 Current problems:
 Right now it doesn't save already parsed images names to avoid repeating itself, which means you better have big references folder so references won't repeat themselves.
