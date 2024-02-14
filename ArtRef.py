@@ -203,7 +203,7 @@ def gui():
 
     global select_angle_var
     select_angle_var = ctk.StringVar(value="0")
-    select_angle = ctk.CTkCheckBox(master=gui.window, text="Rotate by 90*\n(works badly rn)", text_color="#7d6f8a", command=angle_check, variable=select_angle_var, onvalue="90", offvalue="0", font=my_font)
+    select_angle = ctk.CTkCheckBox(master=gui.window, text="Rotate by 90°", text_color="#7d6f8a", command=angle_check, variable=select_angle_var, onvalue="90", offvalue="0", font=my_font)
     select_angle.place(relx=0.23, rely=0.85, anchor="center")
 
     global entry_var
