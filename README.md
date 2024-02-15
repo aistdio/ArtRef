@@ -9,11 +9,15 @@ Intended for periodical drawing sessions.
 
 Steps to use:
 
-0. Install python
-1. Run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
+0. Download ArtRef.7z and unzip it
+1. Run the ArtRef.exe
 2. Choose folder
 3. Enter any number for timer (in seconds, for example "30" means that each 30 seconds reference will be changed)
 4. Draw!
+
+You also can:
+Download artref.py, artref start.bat and run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
+(in this route installation of python and libraries are required)
 
 Current problems:
 
