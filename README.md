@@ -15,6 +15,8 @@ Steps to use:
 3. Enter any number for timer (in seconds, for example "30" means that each 30 seconds reference will be changed)
 4. Draw!
 
+If you're expiriencing any issues with running the file, please try ArtRef0.py and AreRef Start0.bat.
+
 You also can:
 Download artref.py, artref start.bat and run it with "ArtRef Start.bat" or type "python artref.py" in your cmd
 (in this route installation of python and libraries are required)
